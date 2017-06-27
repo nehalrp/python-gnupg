@@ -989,6 +989,8 @@ class GenKey(object):
               key.startswith("PKA_TRUST_") or
               key == "NEWSIG"):
             pass
+        elif key in ("KEY_CONSIDERED"):
+            pass
         else:
             raise ValueError("Unknown status message: %r" % key)
 
